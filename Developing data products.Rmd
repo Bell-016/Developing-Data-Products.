@@ -1,0 +1,13 @@
+---
+title: "Week 2"
+output: html_document
+---
+library(leaflet)
+
+## Warning: package 'leaflet' was built under R version 3.5.1
+
+my_map <- leaflet() %>%
+addTiles() %>%
+addMarkers(lat=-23.546463393107302, lng=-46.63625055858513,
+popup="My job's place on 2021/04/22")
+my_map
